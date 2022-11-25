@@ -1,2 +1,3 @@
 # Kniffel
-A Kniffel Game programmed in school
+
+While learning Object orientated programming patterns, we practise those in this Project.
