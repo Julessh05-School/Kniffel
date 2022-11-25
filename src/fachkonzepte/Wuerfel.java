@@ -12,7 +12,7 @@ public final class Wuerfel {
         return punktzahl;
     }
 
-    public void wuerfle() {
+    public void wirf() {
 
     }
 }
