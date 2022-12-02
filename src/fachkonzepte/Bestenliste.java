@@ -11,10 +11,10 @@ public final class Bestenliste {
     }
 
     public Endstand[] liesAlleEnstaende() {
-
+        return speicher.liesAlleEnstaendeAusSpeicher();
     }
 
     public void trageEndstandEin(Endstand endstand) {
-
+        speicher.schreibeEndstandInSpeicher(endstand);
     }
 }

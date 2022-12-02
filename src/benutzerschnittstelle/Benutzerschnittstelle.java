@@ -9,4 +9,7 @@ public final class Benutzerschnittstelle {
     public Benutzerschnittstelle() {
         dieSteuerung = new Steuerung(this);
     }
+
+    public static void main(String[] args) {
+    }
 }

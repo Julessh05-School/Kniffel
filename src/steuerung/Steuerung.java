@@ -18,14 +18,11 @@ public final class Steuerung {
     }
 
     public void geklicktEintragen(int figurNummer) {
-
     }
 
-    public void neuesSpielgeklickt() {
-
+    public void neuesSpielGeklickt() {
     }
 
     public void geklicktWuerfeln(boolean[] wuerfelWerfen) {
-
     }
 }

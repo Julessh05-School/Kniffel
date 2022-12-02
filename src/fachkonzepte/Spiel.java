@@ -29,27 +29,44 @@ public final class Spiel {
     }
 
     public int ermittleBonus() {
-
+        return 25;
     }
 
     public int ermittleEndsumme() {
-
+        int result = 0;
+        for (Figur f : figuren) {
+            result += f.liesPunktzahl();
+        }
+        return result;
     }
 
     public int ermittlePunktzahlOben() {
-
+        int result = 0;
+        for (int i = 0; i < 6; i++) {
+            result += figuren[i].liesPunktzahl();
+        }
+        return result;
     }
 
     public int ermittlePunktzahlObenMitBonus() {
-
+        return ermittlePunktzahlOben() + ermittleBonus();
     }
 
     public int ermittlePunktzahlUnten() {
-
+        int result = 0;
+        for (int i = 6; i < figuren.length; i++) {
+            result += figuren[i].liesPunktzahl();
+        }
+        return result;
     }
 
     public boolean istBeendet() {
-
+        for (Figur f : figuren) {
+            if (!f.istEingetragen()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public void starteNeu() {
