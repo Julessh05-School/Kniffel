@@ -74,6 +74,5 @@ public final class Spiel {
     }
 
     public void trageEin(int figurenNummer, int[] augenzahlen) {
-
     }
 }

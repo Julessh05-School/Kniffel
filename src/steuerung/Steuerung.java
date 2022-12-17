@@ -21,6 +21,7 @@ public final class Steuerung {
     }
 
     public void neuesSpielGeklickt() {
+        dasSpiel.starteNeu();
     }
 
     public void geklicktWuerfeln(boolean[] wuerfelWerfen) {

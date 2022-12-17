@@ -1,6 +1,7 @@
 package fachkonzepte;
 
 public abstract class Figur {
+
     protected boolean istEingetragen;
 
     protected int punktzahl;
@@ -17,6 +18,6 @@ public abstract class Figur {
     public int liesPunktzahl() {
         return punktzahl;
     }
-    
+
     abstract public void trageEin(int[] augenzahl);
 }
