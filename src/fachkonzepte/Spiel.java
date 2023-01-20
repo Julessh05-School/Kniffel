@@ -3,15 +3,10 @@ package fachkonzepte;
 import fachkonzepte.figuren.*;
 
 public final class Spiel {
-    private final Wuerfel[] wuerfel;
 
     private final Figur[] figuren;
 
     public Spiel() {
-        wuerfel = new Wuerfel[5];
-        for (int i = 0; i < wuerfel.length; i++) {
-            wuerfel[i] = new Wuerfel();
-        }
         figuren = new Figur[13];
         figuren[0] = new Einser();
         figuren[1] = new Zweier();
@@ -70,9 +65,9 @@ public final class Spiel {
     }
 
     public void starteNeu() {
-
     }
 
     public void trageEin(int figurenNummer, int[] augenzahlen) {
+        figuren[figurenNummer].trageEin(augenzahlen);
     }
 }

@@ -18,16 +18,20 @@ public final class BestenlisteSpeicher {
             return errorArray;
         }
         String zeile;
-        while ((zeile = reader.readLine()) != null) {
-            try {
-                if (((zeile = reader.readLine()) != null)) {
+        try {
+            while ((zeile = reader.readLine()) != null) {
+                try {
+                    if (((zeile = reader.readLine()) != null)) {
 
+                    }
+                } catch (IOException e) {
+                    return errorArray;
                 }
-            } catch (IOException e) {
-                return errorArray;
-            }
 
+            }
+        } catch (IOException ignored) {
         }
+        return errorArray;
     }
 
     public void schreibeEndstandInSpeicher(Endstand endstand) {
