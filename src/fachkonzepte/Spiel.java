@@ -65,6 +65,7 @@ public final class Spiel {
     }
 
     public void starteNeu() {
+        
     }
 
     public void trageEin(int figurenNummer, int[] augenzahlen) {
